@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/background.png);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.main {
+    width: 85%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: aqua;
+    text-shadow: 0 0 25px aqua, 0 0 50px aqua;
+    transition: 0.3s ease;
+}
+
+span {
+    color: white;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+button {
+    border: 2px solid aqua;
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: aqua;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translateY(-50%);
+    color: white;
+
+}
+
+
+.content h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.content h1 {
+    font-size: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px 0 30px;
+    line-height: 80px;
+}
+
+
+.right-sidebar {
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgb(0, 57, 57), rgb(6, 0, 47));
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+}
+
+.menu img {
+    width: 25px;
+    margin: 10px auto 0;
+}
+
+.social-links img,
+.useful-links img {
+    width: 30px;
+}
+
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.useful-links {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.bubbles {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bubbles img {
+    width: 50px;
+    animation: bubble-flows 5s linear infinite;
+    opacity: 0;
+
+}
+
+
+@keyframes bubble-flows {
+
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+
+
+.bubbles img:nth-child(1) {
+    width: 20px;
+    animation-delay: 2s;
+
+}
+
+.bubbles img:nth-child(2) {
+    width: 80px;
+    animation-delay: 1s;
+
+}
+
+.bubbles img:nth-child(3) {
+    width: 50px;
+    animation-delay: 3s;
+
+}
+
+.bubbles img:nth-child(4) {
+    width: 65px;
+    animation-delay: 4s;
+
+}
+
+.bubbles img:nth-child(5) {
+    width: 75px;
+    animation-delay: 3.7s;
+
+}
+
+.bubbles img:nth-child(6) {
+    width: 60px;
+    animation-delay: 2.8s;
+
+}
+
+.bubbles img:nth-child(7) {
+    width: 100px;
+    animation-delay: 4.2s;
+
+}
+
+@media screen and (max-width:1166px) {
+
+
+    .home {
+        width: 100%;
+        height: 100vh;
+        background: url(./images/background.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+    }
+    
+.content h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px 0 30px;
+    line-height: 40px;
+}
+
+
+
+
+}
+
+
+@media screen and (max-width:767px){
+    .main{
+        width: 80%;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .content h1 {
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 5px 0 30px;
+        line-height: 40px;
+    }
+    button {
+        border: 2px solid aqua;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: transparent;
+        color: aqua;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-weight: 600;
+    }
+    .right-sidebar {
+        width: 30px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgb(0, 57, 57), rgb(6, 0, 47));
+    }
+    .menu img {
+        width: 15px;
+        margin: 10px auto 0;
+    }
+    
+    .social-links img,
+    .useful-links img {
+        width: 15px;
+    }
+
+    .bubbles img:nth-child(1){
+    width: 20px;
+    animation-delay: 2s;
+
+}
+
+.bubbles img:nth-child(2) {
+    width: 40px;
+    animation-delay: 1s;
+
+}
+
+.bubbles img:nth-child(3) {
+    width: 25px;
+    animation-delay: 3s;
+
+}
+
+.bubbles img:nth-child(4) {
+    width: 35.5px;
+    animation-delay: 4s;
+
+}
+
+.bubbles img:nth-child(5) {
+    width: 37.5px;
+    animation-delay: 3.7s;
+
+}
+
+.bubbles img:nth-child(6) {
+    width: 30px;
+    animation-delay: 2.8s;
+
+}
+
+.bubbles img:nth-child(7) {
+    width: 50px;
+    animation-delay: 4.2s;
+
+}
+    
+
+    
+}
